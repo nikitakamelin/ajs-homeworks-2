@@ -5,4 +5,3 @@ import './js/domain';
 import './js/game';
 
 
-console.log(result);

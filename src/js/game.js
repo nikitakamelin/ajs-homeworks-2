@@ -3,16 +3,17 @@ class Game {
 	  console.log('game started');
 	}
  }
+//Экспорт из модуля game класса Game в качестве дефолтного
+const defaultGame = new Game();
+export default defaultGame;
 
- class GameSavingData {
+ export class GameSavingData {
  }
  
- function readGameSaving() {
+ export function readGameSaving() {
  }
  
- function writeGameSaving() {
+ export function writeGameSaving() {
  }
-
- const importData = require('./domain.js');
-
- console.log(importData);
+ //В модуле game импорт класса Character
+import anyName from './domain.js';
